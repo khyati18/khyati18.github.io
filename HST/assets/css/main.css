@@ -580,9 +580,10 @@ a{
 /* Section Dividers Backgrounds */
 
 .divider1 {
-	background-image: url('../img/campus/image.png');
+	background-image: url('../img/bg/divider2.png');
     background-position: 0% 60%;
-}
+    
+    }
 
 .divider2 {
 	background-image: url('../img/bg/divider2.png')
