@@ -5,7 +5,7 @@
 
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'agarwal.khyati5@gmail.com';
+$sendTo = 'advisors@jfkapital.com';
 
 // message that will be displayed when everything is OK :)
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
@@ -23,17 +23,16 @@ error_reporting( E_ALL & ~E_NOTICE );
 
 try {
 
-	if ( count( $_POST ) == 0 && ! isset($_POST['username'])&& ! isset($_POST['email'])&& ! isset($_POST['message'])) {
+	if ( count( $_POST ) == 0 && ! isset($_POST['email'])) {
 		throw new \Exception( 'Form is empty' );
 	}
 
 	// an email address that will be in the From field of the email.
 	$from = $_POST['email'] ;
-	// The message send in email
-	$message = $_POST['message'] ;
-	// subject of the email
-    $subject = $_POST['name'];
 
+	$message = "Connect" ;
+	// subject of the email
+    $subject = "Connection request";
 
 
 	$headers = 'From: ' . $from . "\r\n" .
