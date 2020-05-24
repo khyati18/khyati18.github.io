@@ -11,6 +11,19 @@ button.btn {
   background-color: #92c500;
 }
 
+.column {
+  float: left;
+  width: 45%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 a.white-btn {
 	border: 1px solid #fff;
 	border-radius: 3px;
@@ -85,12 +98,23 @@ header {
 	width: 100%;
 	z-index: 10;
 }
-img.logo {
+img.logo1 {
 	position: relative;
 	text-transform: uppercase;
-	top: 8px;
+	top: 2px;
+	height: 120px;
+	width: 150px;
+	max-width: 1000%;
+}
+img.logo2 {
+	position: relative;
+	text-transform: uppercase;
+	top: 30px;
+	align-self: right;
+	padding-left: 20px;
 	height: 60px;
-	width: 800px;
+	width: 270px;
+	max-width: 1000%;
 }
 p.logo strong {
 	font-weight: 700;
@@ -546,145 +570,37 @@ footer p, footer a:visited, footer a, footer a:hover {
     font-size: 3em;
     line-height: 1.1;
   }
-  img.logo {
-  	padding-left: 50px;
-    top: 0;
-    height: 51px;
-  }
+  
 }
 @media screen and (max-width: 768px) {
   .background-image {
     background-position: center;
   }
+  img.logo1 {
+	height: 60px;
+	width: 110px;
+	margin-left: 40px;
+	}
+	img.logo2 {
+	height: 30px;
+	width: 150px;
+	}
+	#first-block h1
+	{
+		font-size: 15px;
+	}
+	.column {
+	  float: left;
+	  width: 32%;
+	  padding: 5px;
+	}
+
+	/* Clearfix (clear floats) */
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
 }
 
-/* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-  background-color: #92c500;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 150px;
-}
-
-/* The popup chat - hidden by default */
-.chat-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 250px;
-  padding: 10px;
-  background-color: white;
-}
-
-/* Full-width textarea */
-.form-container input {
-  width: 100%;
-  padding: 5px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-  resize: none;
-  min-height: 20px;
-}
-
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/send button */
-.form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 8px 10px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-
- /*Trigger Button*/
-.login-trigger {
-  font-weight: bold;
-  color: #fff;
-  background: linear-gradient(to bottom right, #B05574, #F87E7B);
-  padding: 15px 30px;
-  border-radius: 30px;
-  position: relative; 
-  top: 50%;
-}
-
-/*Modal*/
-h4 {
-  font-weight: bold;
-  color: #fff;
-}
-.close {
-  color: #fff;
-  transform: scale(1.2)
-}
-.modal-content {
-  font-weight: bold;
-  background: linear-gradient(to bottom right,#F87E7B,#B05574);
-}
-.form-control {
-  margin: 1em 0;
-}
-.form-control:hover, .form-control:focus {
-  box-shadow: none;  
-  border-color: #fff;
-}
-.username, .password {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  border-bottom: 2px solid #eee;
-  padding-left: 0;
-  font-weight: normal;
-  background: transparent;  
-}
-.form-control::-webkit-input-placeholder {
-  color: #eee;  
-}
-.form-control:focus::-webkit-input-placeholder {
-  font-weight: bold;
-  color: #fff;
-}
-.login {
-  padding: 6px 20px;
-  border-radius: 20px;
-  background: none;
-  border: 2px solid #FAB87F;
-  color: #FAB87F;
-  font-weight: bold;
-  transition: all .5s;
-  margin-top: 1em;
-}
-.login:hover {
-  background: #FAB87F;
-  color: #fff;
-}
