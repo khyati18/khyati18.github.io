@@ -156,8 +156,8 @@
 	  		 		<h1><img src="assets/img/HST_Logo.png" class="img-responsive topImage" style="margin: 0 auto;"></h1>
 	  		 		<span style="font-size: 75px;"><font color="163946"><b>Himalayan Startup Trek 2020</b></font></span><br>
 	  		 		<!--<span style="font-size: 70px;"><font color="163946"><b>Startup</b></font></span><br>-->
-	  		 		<span style="font-size: 35px"><font color="0B9246"><b><i>   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp         ... goes digital!</i></b></font></span>
-	  		 		
+	  		 		<span style="font-size: 35px"><font color="0B9246"><b><i>      ... goes digital!</i></b></font></span>
+	  		 		<br>
 	  		 		<p class="date"><font color="163946" size="5">December 11-13, 2020</font></p>
 	  		 		<!-- <p><a class="btn btn-success">Apply Now</a></p> -->
 	  		 		<!--a href="assets/downloads/report.pdf" class="manual-optin-trigger" style="
@@ -231,53 +231,112 @@
 		</div><!-- greywrap -->
 	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 		
 	<br>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
+<style>
 	
-		table, th, td {
-			border: 1px solid black;
-			text-align: center;
-			height: 75px;
-		}
-		</style>
-		</head>
-		<body><br>
+		table { 
+	width: 800px; 
+	border-collapse: collapse; 
+	margin:20px auto;
+	}
 
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 21px;
+	}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+</style>
+</head>
+		
+
+		<body>
+
+		<br>
 
 		<img src="assets/img/hst-2020.jpg" style="width:60%;">
 
+		<br>
+		
 
+		<h2 class="centered"><font color="163946"><b>Journey with HST 2020</b></font></h2>
 		<hr>
-		<br>
-			<h2 class="centered"><font color="#FF0000"><b>Journey with HST 2020</b></font></h2>
-		<br>
-
 
 		<div class="container">				
-			<div class="table-responsive" style="color: black"> 
-				<table class="centered" style="width:100%; border-width:2px; padding: 3px;">
+			<div class="table-responsive"> 
+				<table class="centered" style="width:100%">
 					<thead>
 					<b>
 						<tr>
 						  <th>NOV 25</th>
 						  <th>DEC 5</th>
-						  <th>DEC 11-13<br>(HST 2020)</th>
+						  <th>DEC 11-13 <br>(HST 2020)</th>
 						  <th>DEC 20</th>
 						  <th>JAN 20</th>
 						</tr>
@@ -419,42 +478,23 @@
 		        	<div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
 		        </div>
 		  	</div>
-<!-- </div>container 
 
 
-				<br>
-				<br>
-				<h1 class="centered"><font color="163946"><b>SPEAKERS</b></font></h1> 
-				<hr>
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-				<style>
-				img {
-				 display: block;
-				 margin-left: auto;
-				 margin-right: auto;
-				}
-				</style>
-				</head>
-				<body>
-
-				<br>
-				<img src="assets/img/hst_speaker.png" alt="Paris" style="width:50%;">
--->
-<br>
-<div class="container" id="about" name="about">
-	<div class="row white">
-		<h1 class="centered">What to expect from <font color="163946"><b>IIT MANDI CATALYST?</b></font></h1>
-
-		<img src="assets/img/Funding.png" style="width:1000px">
 		<br>
-		<center>
-			<h4>For more information, click <a href="http://www.iitmandicatalyst.in/funding/">here</a>.</h4>
-		</center>
+		<div class="container" id="about" name="about">
+			<div class="row white">
+				<h1 class="centered">What to expect from <font color="163946"><b>IIT MANDI CATALYST?</b></font></h1>
+
+				<!-- <img src="assets/img/Funding.png"> -->
+				<br>
+				<center>
+					<h4>For more information, click <a href="http://www.iitmandicatalyst.in/funding/">here</a>.</h4>
+				</center>
 
 
-	</div><!-- row -->
-</div>
-<br>
+			</div><!-- row -->
+		</div>
+		<br>
 
 <div class="container" id="about" name="about">
 	<h1 class="centered"><font color="163946"><b>How is Himalayan Startup Trek building a startup ecosystem in the hills?</b></font></h1><hr>
